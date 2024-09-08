@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="main w-full h-screen bg-white-400 flex">
+        <div class="login w-1/2 ">
+            <div class="nav flex justify-between mb-16 p-8 w-full h-20">
+                <div>
+                    <img class="h-8" src="https://assets.caboosecms.com/media/15178763_15048528_ac23-website-graphics-2_original_large.png?1713457162" alt="" srcset="">
+                </div>
+                <div class="relative inline-block group flex justify-between items-center gap-3">
+                    <h3 class="text-gray-400">Are you a new customer?</h3>
+                    <button class="py-2 px-4 bg-transparent border border-zinc-300 rounded-full text-green-800 font-medium " >Enroll Now</button>
+
+                    <div class="z-20 bg-opacity-85 absolute top-5 mt-4 hidden w-64 bg-gray-900 text-white text-xs p-4 rounded-md shadow-lg group-hover:block">
+                      <!-- Arrow pointing upwards to the button -->
+                      <div class="absolute top-0 right-4 transform -translate-y-full w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-gray-800"></div>
+                      <!-- Content -->
+                      <h3 class="text-lg font-semibold mb-2">Enroll now to:</h3>
+                      <ul class="space-y-2">
+                          <li class="flex items-center">
+                              <span class="text-green-600 text-xl"><i class="ri-checkbox-circle-line"></i></span>
+                              <span class="ml-2">Access your loans online</span>
+                          </li>
+                          <li class="flex items-center">
+                              <span class="text-green-600 text-xl"><i class="ri-checkbox-circle-line"></i></span>
+                              <span class="ml-2">Pay your mortgage online</span>
+                          </li>
+                          <li class="flex items-center">
+                              <span class="text-green-600 text-xl"><i class="ri-checkbox-circle-line"></i></span>
+                              <span class="ml-2">View your mortgage statements</span>
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-5 justify-center items-center">
+                <div>
+                    <h1 class="text-4xl font-bold text-slate-900 text-center" >Welcome Back</h1>
+                    <h6 class=" text-sm text-gray-500 mt-2">Sign in to your Regions MyMortage account.</h6>
+                </div>
+
+                <form>
+                    <!-- Online ID Input Field -->
+                    <div class="relative">
+                        <input type="online-id" id="online-id" name="online-id" required class="peer placeholder-transparent px-2 py-4 mb-4 h-12 w-96 border rounded-lg border-gray-300 text-gray-900 focus:outline-none focus:border-green-500" placeholder="Password">
+                        <label for="online-id" class="absolute left-2 top-0 text-gray-500 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-focus:top-0 peer-focus:text-sm peer-focus:text-green-500">
+                            Online ID
+                        </label>
+                      </div>
+                    
+                    <!-- Password Input Field -->
+                    <div class="relative">
+                      <input type="password" id="password" name="password" required class="peer placeholder-transparent px-2 py-4 mb-4 h-12 w-96 border rounded-lg border-gray-300 text-gray-900 focus:outline-none focus:border-green-500" placeholder="Password">
+                      <label for="password" class="absolute left-2 top-0 text-gray-500 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-focus:top-0 peer-focus:text-sm peer-focus:text-green-500">
+                        Password
+                      </label>
+                      <button type="button" id="togglePassword" class="absolute right-2 top-3 text-gray-600">
+                        Show
+                      </button>
+                    </div>
+                
+                    <!-- Remember Me Checkbox -->
+                    <div class="flex flex-col gap-5">
+                      <div class="flex items-center">
+                        <input id="remember-me" type="checkbox" class="h-4 w-4 text-green-500 focus:ring-green-500 border-gray-300 rounded">
+                        <label for="remember-me" class="ml-2 block text-sm text-gray-900">Remember me</label>
+                      </div>
+                
+                      <!-- Login Button -->
+                      <button type="submit" id="loginButton" disabled class="w-full bg-gray-400 transition-all duration-300 ease-in-out text-white py-2 px-4 rounded-full cursor-not-allowed">
+                        Login
+                      </button>
+                
+                      <!-- Links for Forgot Online ID? and Forgot Password? -->
+                      <div class="flex justify-center gap-4 text-sm">
+                        <a href="#" class="text-green-600 hover:underline">Forgot Online ID?</a>
+                        <a href="#" class="text-green-600 hover:underline">Forgot Password?</a>
+                      </div>    
+                    </div>                   
+              
+                  </form>
+
+
+                 
+            </div>
+            <div class="footer w-full flex flex-col justify-center items-center mt-20">
+              <div class="flex gap-3">
+                <img class="text-gray-500 opacity-50 h-5" src="./images/home.png" alt="" srcset="">
+                <h4 class="text-sm text-gray-500">Equal Housing Lender . </h4>
+                <h3 class="text-sm text-gray-500">Member FDIC</h3>
+              </div>
+              <div class="flex gap-5">
+                <h3 class="text-sm text-gray-500">&copy;2023 Regions Financial Corporation. All Rights Reserved.</h3>
+                <h3 class="text-sm text-green-700">1(800) REGIONS</h3>
+              </div>
+            </div>
+            
+        </div>
+        <div class="w-1/2">
+           <div>
+            <img class="w-full h-screen object-cover p-5 rounded-[40px]" src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" srcset="">
+           </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
