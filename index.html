@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+      <!-- Icon link-->
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
     rel="stylesheet"
@@ -11,17 +13,21 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="main w-full h-screen bg-white-400 flex">
+    <div class="main w-full h-screen bg-white-400 flex fixed">
         <div class="login w-1/2 ">
             <div class="nav flex justify-between mb-16 p-8 w-full h-20">
-                <div>
-                    <img class="h-8" src="https://assets.caboosecms.com/media/15178763_15048528_ac23-website-graphics-2_original_large.png?1713457162" alt="" srcset="">
+              <div class="logoContainer flex items-center gap-1">
+                <img id="logo" class="h-10 relative transition-all" src="./images/logo.png" alt="" srcset="">
+                <div class="logoHeading">
+                  <h1 class="font-semibold leading-5 text-xl text-slate-900" >REGIONS</h1>
+                  <h3 class="text-sm ">Mortgage</h3>
                 </div>
-                <div class="relative inline-block group flex justify-between items-center gap-3">
-                    <h3 class="text-gray-400">Are you a new customer?</h3>
+            </div>
+                <div id="group" class="z-50 relative inline-block group flex justify-between items-center gap-3">
+                    <h3 class="newCustomer text-gray-400">Are you a new customer?</h3>
                     <button class="py-2 px-4 bg-transparent border border-zinc-300 rounded-full text-green-800 font-medium " >Enroll Now</button>
 
-                    <div class="z-20 bg-opacity-85 absolute top-5 mt-4 hidden w-64 bg-gray-900 text-white text-xs p-4 rounded-md shadow-lg group-hover:block">
+                    <div class="bg-opacity-85 absolute top-5 mt-4 hidden w-64 bg-gray-900 text-white text-xs p-4 rounded-md shadow-lg group-hover:block">
                       <!-- Arrow pointing upwards to the button -->
                       <div class="absolute top-0 right-4 transform -translate-y-full w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-gray-800"></div>
                       <!-- Content -->
@@ -44,9 +50,9 @@
                 </div>
             </div>
 
-            <div class="flex flex-col gap-5 justify-center items-center">
+            <div id="loginContainer" class="loginContainer flex flex-col gap-5 justify-center items-center">
                 <div>
-                    <h1 class="text-4xl font-bold text-slate-900 text-center" >Welcome Back</h1>
+                    <h1 class="text-4xl font-bold text-slate-900 text-center">Welcome Back</h1>
                     <h6 class=" text-sm text-gray-500 mt-2">Sign in to your Regions MyMortage account.</h6>
                 </div>
 
@@ -107,12 +113,16 @@
             </div>
             
         </div>
-        <div class="w-1/2">
+        <div class="w-1/2 fullImage">
            <div>
-            <img class="w-full h-screen object-cover p-5 rounded-[40px]" src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" srcset="">
+            <img id="leftImage" class="w-full h-screen object-cover p-5 rounded-[40px]" src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" srcset="">
            </div>
         </div>
     </div>
+
+    <!-- Gsap CDN -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="script.js"></script>
 </body>
